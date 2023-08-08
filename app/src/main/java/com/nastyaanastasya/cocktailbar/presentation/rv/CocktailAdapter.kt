@@ -7,15 +7,13 @@ import com.nastyaanastasya.cocktailbar.domain.model.CocktailDto
 
 class CocktailAdapter(
     private val action: (Int) -> Unit
-): ListAdapter<CocktailDto, CocktailHolder>(CocktailDiffUtilsCallback()) {
+) : ListAdapter<CocktailDto, CocktailHolder>(CocktailDiffUtilsCallback()) {
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CocktailHolder {
-        TODO("Not yet implemented")
-    }
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) =
+        CocktailHolder.create(parent, action)
 
-    override fun onBindViewHolder(holder: CocktailHolder, position: Int) {
-        TODO("Not yet implemented")
-    }
+    override fun onBindViewHolder(holder: CocktailHolder, position: Int) =
+        holder.bind(getItem(position))
 
     override fun submitList(list: MutableList<CocktailDto>?) {
         super.submitList(
