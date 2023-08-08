@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_4">4dp</dimen>
+    <dimen name="margin_8">8dp</dimen>
+    <dimen name="margin_12">12dp</dimen>
+    <dimen name="margin_16">16dp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="margin_24">24dp</dimen>
+    <dimen name="margin_32">32dp</dimen>
+    <dimen name="margin_40">40dp</dimen>
+    <dimen name="margin_72">80dp</dimen>
+
+    <dimen name="text_size_12">12sp</dimen>
+    <dimen name="text_size_14">14sp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="text_size_18">18sp</dimen>
+    <dimen name="text_size_24">24sp</dimen>
+    <dimen name="text_size_32">32sp</dimen>
+    <dimen name="text_size_36">36sp</dimen>
+
+    <dimen name="button_height">56dp</dimen>
+    <dimen name="button_width">328dp</dimen>
+
+    <dimen name="fab">80dp</dimen>
+
+    <dimen name="arrow">32dp</dimen>
+
+    <dimen name="start_text_width">130dp</dimen>
+    <dimen name="large_edit_text_width">130dp</dimen>
+
+    <dimen name="image_view_rv">160dp</dimen>
+    <dimen name="image_view_edit">216dp</dimen>
+    <dimen name="image_view_start">280dp</dimen>
+    <dimen name="image_view_details">360dp</dimen>
+
+</resources>

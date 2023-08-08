@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ShapeAppearanceOverlay.App.CornerSize10Percent" parent="">
+        <item name="cornerSize">10%</item>
+    </style>
+
+    <style name="FloatingActionButton" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="backgroundTint">@color/button</item>
+        <item name="fabCustomSize">@dimen/fab</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:src">@drawable/ic_baseline_add_24</item>
+    </style>
+
+    <style name="BaseText" parent="Widget.AppCompat.TextView">
+        <item name="fontFamily">@font/didact_gothic</item>
+    </style>
+
+    <style name="HeaderText" parent="BaseText">
+        <item name="android:textSize">@dimen/text_size_36</item>
+    </style>
+
+    <style name="HeaderBodyText" parent="BaseText">
+        <item name="android:textSize">@dimen/text_size_32</item>
+    </style>
+
+    <style name="Text" parent="BaseText">
+        <item name="android:textSize">@dimen/text_size_16</item>
+    </style>
+
+    <style name="SmallText" parent="BaseText">
+        <item name="android:textSize">@dimen/text_size_14</item>
+    </style>
+
+    <style name="CardText" parent="BaseText">
+        <item name="android:textSize">@dimen/text_size_18</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="OutlinedButton" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:layout_marginStart">@dimen/margin_32</item>
+        <item name="android:layout_marginEnd">@dimen/margin_32</item>
+        <item name="android:textSize">@dimen/text_size_24</item>
+        <item name="android:textColor">@color/button</item>
+        <item name="android:fontFamily">@font/didact_gothic</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="strokeColor">@color/button</item>
+    </style>
+
+    <style name="FilledButton" parent="Widget.Material3.Button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:layout_marginStart">@dimen/margin_32</item>
+        <item name="android:layout_marginEnd">@dimen/margin_32</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:backgroundTint">@color/button</item>
+        <item name="android:textSize">@dimen/text_size_24</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:fontFamily">@font/didact_gothic</item>
+    </style>
+
+    <style name="TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_marginStart">@dimen/margin_16</item>
+        <item name="android:layout_marginEnd">@dimen/margin_16</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="hintTextAppearance">@style/Text</item>
+        <item name="boxStrokeColor">@color/support_text</item>
+        <item name="textOutlineColor">@color/text</item>
+        <item name="placeholderTextColor">@color/support_text</item>
+        <item name="titleTextColor">@color/support_text</item>
+    </style>
+
+    <style name="ErrorEnabledTextInputLayout" parent="TextInputLayout">
+        <item name="android:layout_marginStart">@dimen/margin_16</item>
+        <item name="android:layout_marginEnd">@dimen/margin_16</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="errorEnabled">true</item>
+        <item name="boxStrokeErrorColor">@color/error_text</item>
+        <item name="errorTextColor">@color/error_text</item>
+    </style>
+
+    <style name="LargeTextInputLayout" parent="TextInputLayout">
+        <item name="android:layout_marginStart">@dimen/margin_16</item>
+        <item name="android:layout_marginEnd">@dimen/margin_16</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="helperText">@string/helper_optional</item>
+        <item name="helperTextEnabled">true</item>
+        <item name="hintTextAppearance">@style/Text</item>
+    </style>
+
+    <style name="TextInputEditText" parent="Widget.Material3.TextInputEditText.OutlinedBox">
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textAppearance">@style/Text</item>
+    </style>
+
+</resources>

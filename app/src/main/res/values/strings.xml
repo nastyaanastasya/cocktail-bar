@@ -1,3 +1,40 @@
 <resources>
-    <string name="app_name">CocktailBar</string>
+    <string name="app_name">Cocktail Bar</string>
+
+    <string name="my_cocktails_text">My cocktails</string>
+    <string name="add_first_cocktail_text">Add your first cocktail here</string>
+
+    <string name="btn_edit_text">Edit</string>
+    <string name="btn_cancel_text">Cancel</string>
+    <string name="btn_save_text">Save</string>
+    <string name="btn_delete_text">Delete</string>
+
+    <string name="empty_title_error">Add title</string>
+
+    <string name="hint_title">Title</string>
+    <string name="hint_desc">Description</string>
+    <string name="hint_recipe">Recipe</string>
+
+    <string name="helper_optional">Optional field</string>
+
+    <string name="title_text">Title</string>
+    <string name="desc_text">Description</string>
+    <string name="recipe_text">Recipe</string>
+    <string name="ingredients_text">Ingredients</string>
+
+    <string name="desc_example">To make this homemade lemonade, simply combine all the ingredients in a pitcher.</string>
+
+    <string name="recipe_title">Recipe:</string>
+    <string name="recipe_example">To make this homemade lemonade, simply combine all the ingredients in a pitcher.</string>
+
+    <string name="ingredient_example">2 cups of water</string>
+
+    <string name="cocktail_example">Cocktail Name Example</string>
+
+    <string name="title_error_text">Add title</string>
+
+    <string name="chip_water">Cup of water</string>
+    <string name="chip_lime">One lime</string>
+    <string name="chip_orange_juice">Orange juice</string>
+    <string name="show_error">Add title</string>
 </resources>

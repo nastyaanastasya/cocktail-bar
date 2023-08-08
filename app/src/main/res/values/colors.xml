@@ -2,4 +2,10 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="button">#4B97FF</color>
+
+    <color name="text">#313131</color>
+    <color name="support_text">#79747E</color>
+    <color name="error_text">#FF0000</color>
 </resources>
