@@ -19,7 +19,8 @@ fun Fragment.hideLoading() {
 
 fun Fragment.openEditingScreen(id: Int?) {
     findNavController().navigate(
-        R.id.action_cocktailsFragment_to_editFragment
+        R.id.action_cocktailsFragment_to_editFragment,
+        bundleOf(COCKTAIL_ID to id)
     )
 }
 
