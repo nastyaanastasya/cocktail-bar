@@ -5,5 +5,7 @@ import com.nastyaanastasya.cocktailbar.R
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class DetailsFragment: Fragment(R.layout.fragment_details) {
+class DetailsFragment : Fragment(R.layout.fragment_details) {
+
+    
 }

@@ -5,14 +5,14 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
 import com.nastyaanastasya.cocktailbar.databinding.ItemCocktailBinding
-import com.nastyaanastasya.cocktailbar.domain.model.CocktailDto
+import com.nastyaanastasya.cocktailbar.domain.model.CocktailSimpleDto
 
 class CocktailHolder(
     private val binding: ItemCocktailBinding,
     private val action: (Int) -> Unit
 ) : RecyclerView.ViewHolder(binding.root) {
 
-    fun bind(item: CocktailDto) {
+    fun bind(item: CocktailSimpleDto) {
         with(binding) {
             tvName.text = item.name
             ivCocktail.load(item.image)
