@@ -13,6 +13,6 @@ data class Cocktail(
     var name: String,
     var desc: String?,
     var recipe: String?,
-    val ingredients: List<String>,
+    var ingredients: List<String>,
     @ColumnInfo(name = "date") var dateOfEditing: Date
 )

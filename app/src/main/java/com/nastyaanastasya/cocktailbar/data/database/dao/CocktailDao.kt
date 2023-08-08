@@ -11,7 +11,10 @@ import com.nastyaanastasya.cocktailbar.data.database.entity.Cocktail
 interface CocktailDao {
 
     @Query("SELECT * FROM cocktail ORDER BY date")
-    suspend fun getAll(): List<Cocktail>
+    suspend fun getAll(): List<Cocktail>?
+
+    @Query("SELECT * FROM cocktail WHERE id = :id")
+    suspend fun getById(id: Int): Cocktail
 
     @Insert
     suspend fun insert(cocktail: Cocktail)
