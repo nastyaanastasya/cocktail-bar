@@ -37,6 +37,7 @@ class CocktailsFragment : Fragment(R.layout.fragment_cocktails) {
         initObservers()
         initListeners()
         initRecycler()
+        loadData()
     }
 
     private fun initObservers() {
@@ -51,6 +52,10 @@ class CocktailsFragment : Fragment(R.layout.fragment_cocktails) {
         binding.fabAdd.setOnClickListener {
             openEditingScreen(null)
         }
+    }
+
+    private fun loadData() {
+        viewModel.getList()
     }
 
     private fun updateUi(list: List<CocktailSimpleDto>) {
