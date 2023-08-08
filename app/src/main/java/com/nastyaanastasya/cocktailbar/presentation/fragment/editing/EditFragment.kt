@@ -68,6 +68,7 @@ class EditFragment : Fragment(R.layout.fragment_edit) {
                     id?.let {
                         editViewModel.edit(cocktail)
                     } ?: editViewModel.save(cocktail)
+                    navigateBack()
                 }
             }
             btnDelete.setOnClickListener {
@@ -93,9 +94,16 @@ class EditFragment : Fragment(R.layout.fragment_edit) {
                 name = binding.tietTitle.text.toString(),
                 desc = binding.tietDesc.text.toString(),
                 recipe = binding.tietRecipe.text.toString(),
-                ingredients = emptyList()
+                ingredients = mutableListOf()
             )
         }
+        else {
+            showErrorMessage()
+        }
+    }
+
+    private fun showErrorMessage() {
+        binding.tietTitle.error = getString(R.string.show_error)
     }
 
     private fun checkTitleText() = binding.tietTitle.text.toString().isNotBlank()

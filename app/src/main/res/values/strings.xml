@@ -32,4 +32,9 @@
     <string name="cocktail_example">Cocktail Name Example</string>
 
     <string name="title_error_text">Add title</string>
+
+    <string name="chip_water">Cup of water</string>
+    <string name="chip_lime">One lime</string>
+    <string name="chip_orange_juice">Orange juice</string>
+    <string name="show_error">Add title</string>
 </resources>
