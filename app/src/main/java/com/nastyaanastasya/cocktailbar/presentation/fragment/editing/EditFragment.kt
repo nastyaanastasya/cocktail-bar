@@ -13,7 +13,9 @@ import com.nastyaanastasya.cocktailbar.R
 import com.nastyaanastasya.cocktailbar.databinding.FragmentEditBinding
 import com.nastyaanastasya.cocktailbar.domain.model.CocktailDto
 import com.nastyaanastasya.cocktailbar.presentation.extension.constants.Constants.COCKTAIL_ID
+import com.nastyaanastasya.cocktailbar.presentation.extension.hideLoading
 import com.nastyaanastasya.cocktailbar.presentation.extension.navigateBack
+import com.nastyaanastasya.cocktailbar.presentation.extension.showLoading
 import com.nastyaanastasya.cocktailbar.presentation.viewmodel.CocktailEditingViewModel
 import com.nastyaanastasya.cocktailbar.presentation.viewmodel.DetailsViewModel
 import dagger.hilt.android.AndroidEntryPoint
@@ -55,6 +57,24 @@ class EditFragment : Fragment(R.layout.fragment_edit) {
                 }
             }
         }
+        viewLifecycleOwner.lifecycleScope.launch {
+            editViewModel.save.collect {
+                hideLoading()
+                navigateBack()
+            }
+        }
+        viewLifecycleOwner.lifecycleScope.launch {
+            editViewModel.edit.collect {
+                hideLoading()
+                navigateBack()
+            }
+        }
+        viewLifecycleOwner.lifecycleScope.launch {
+            editViewModel.remove.collect {
+                hideLoading()
+                navigateBack()
+            }
+        }
     }
 
     private fun initListeners() {
@@ -65,6 +85,7 @@ class EditFragment : Fragment(R.layout.fragment_edit) {
             btnSave.setOnClickListener {
                 getInfo()
                 cocktail?.let { cocktail ->
+                    showLoading()
                     id?.let {
                         editViewModel.edit(cocktail)
                     } ?: editViewModel.save(cocktail)
@@ -73,6 +94,7 @@ class EditFragment : Fragment(R.layout.fragment_edit) {
             }
             btnDelete.setOnClickListener {
                 cocktail?.let {
+                    showLoading()
                     editViewModel.remove(it)
                 }
             }
@@ -96,8 +118,7 @@ class EditFragment : Fragment(R.layout.fragment_edit) {
                 recipe = binding.tietRecipe.text.toString(),
                 ingredients = mutableListOf()
             )
-        }
-        else {
+        } else {
             showErrorMessage()
         }
     }
