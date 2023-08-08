@@ -11,7 +11,7 @@
 
         <ImageView
             android:id="@+id/iv_cocktail"
-            android:layout_width="wrap_content"
+            android:layout_width="@dimen/image_view_edit"
             android:layout_height="@dimen/image_view_edit"
             android:layout_gravity="center_vertical"
             android:layout_marginTop="@dimen/margin_40"
@@ -52,10 +52,10 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/tiet_desc"
+                style="@style/TextInputEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="start"
-                style="@style/TextInputEditText"
                 android:inputType="textMultiLine" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -72,14 +72,14 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/tiet_recipe"
+                style="@style/TextInputEditText"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="start"
-                style="@style/TextInputEditText"
                 android:inputType="textMultiLine" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_save"
             style="@style/FilledButton"
             android:layout_marginTop="@dimen/margin_24"
@@ -92,12 +92,22 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_cancel"
             style="@style/OutlinedButton"
-            android:layout_marginBottom="@dimen/margin_24"
+            android:layout_marginBottom="@dimen/margin_8"
             android:text="@string/btn_cancel_text"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/btn_save" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_delete"
+            style="@style/OutlinedButton"
+            android:layout_marginBottom="@dimen/margin_24"
+            android:text="@string/btn_delete_text"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_cancel" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>

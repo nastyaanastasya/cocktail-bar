@@ -23,8 +23,16 @@
         <item name="android:textSize">@dimen/text_size_36</item>
     </style>
 
+    <style name="HeaderBodyText" parent="BaseText">
+        <item name="android:textSize">@dimen/text_size_32</item>
+    </style>
+
     <style name="Text" parent="BaseText">
         <item name="android:textSize">@dimen/text_size_16</item>
+    </style>
+
+    <style name="SmallText" parent="BaseText">
+        <item name="android:textSize">@dimen/text_size_14</item>
     </style>
 
     <style name="CardText" parent="BaseText">

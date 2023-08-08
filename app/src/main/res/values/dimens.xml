@@ -11,6 +11,7 @@
     <dimen name="margin_72">80dp</dimen>
 
     <dimen name="text_size_12">12sp</dimen>
+    <dimen name="text_size_14">14sp</dimen>
     <dimen name="text_size_16">16sp</dimen>
     <dimen name="text_size_18">18sp</dimen>
     <dimen name="text_size_24">24sp</dimen>
@@ -30,4 +31,6 @@
     <dimen name="image_view_rv">160dp</dimen>
     <dimen name="image_view_edit">216dp</dimen>
     <dimen name="image_view_start">280dp</dimen>
+    <dimen name="image_view_details">360dp</dimen>
+
 </resources>

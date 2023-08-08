@@ -1,4 +1,4 @@
-package com.nastyaanastasya.cocktailbar.presentation.rv
+package com.nastyaanastasya.cocktailbar.presentation.fragment.main.rv
 
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil

@@ -22,6 +22,13 @@
     <string name="recipe_text">Recipe</string>
     <string name="ingredients_text">Ingredients</string>
 
+    <string name="desc_example">To make this homemade lemonade, simply combine all the ingredients in a pitcher.</string>
+
+    <string name="recipe_title">Recipe:</string>
+    <string name="recipe_example">To make this homemade lemonade, simply combine all the ingredients in a pitcher.</string>
+
+    <string name="ingredient_example">2 cups of water</string>
+
     <string name="cocktail_example">Cocktail Name Example</string>
 
     <string name="title_error_text">Add title</string>

@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/cocktailsFragment"
-        android:name="com.nastyaanastasya.cocktailbar.presentation.fragment.CocktailsFragment"
+        android:name="com.nastyaanastasya.cocktailbar.presentation.fragment.main.CocktailsFragment"
         android:label="CocktailsFragment" >
         <action
             android:id="@+id/action_cocktailsFragment_to_detailsFragment"
@@ -17,7 +17,7 @@
     </fragment>
     <fragment
         android:id="@+id/detailsFragment"
-        android:name="com.nastyaanastasya.cocktailbar.presentation.fragment.DetailsFragment"
+        android:name="com.nastyaanastasya.cocktailbar.presentation.fragment.details.DetailsFragment"
         android:label="DetailsFragment" >
         <action
             android:id="@+id/action_detailsFragment_to_editFragment"
@@ -25,6 +25,6 @@
     </fragment>
     <fragment
         android:id="@+id/editFragment"
-        android:name="com.nastyaanastasya.cocktailbar.presentation.fragment.EditFragment"
+        android:name="com.nastyaanastasya.cocktailbar.presentation.fragment.editing.EditFragment"
         android:label="EditFragment" />
 </navigation>

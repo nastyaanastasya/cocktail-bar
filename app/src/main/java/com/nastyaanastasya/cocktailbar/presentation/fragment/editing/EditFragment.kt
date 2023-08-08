@@ -1,4 +1,4 @@
-package com.nastyaanastasya.cocktailbar.presentation.fragment
+package com.nastyaanastasya.cocktailbar.presentation.fragment.editing
 
 import android.os.Bundle
 import android.view.View
@@ -70,6 +70,11 @@ class EditFragment : Fragment(R.layout.fragment_edit) {
                     } ?: editViewModel.save(cocktail)
                 }
             }
+            btnDelete.setOnClickListener {
+                cocktail?.let {
+                    editViewModel.remove(it)
+                }
+            }
             ivCocktail.setOnClickListener {
                 pickImageFromGallery()
             }
@@ -101,6 +106,7 @@ class EditFragment : Fragment(R.layout.fragment_edit) {
             tietTitle.setText(cocktail.name)
             tietDesc.setText(cocktail.desc)
             tietRecipe.setText(cocktail.recipe)
+            btnDelete.visibility = View.VISIBLE
         }
     }
 

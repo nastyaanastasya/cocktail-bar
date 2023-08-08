@@ -1,4 +1,4 @@
-package com.nastyaanastasya.cocktailbar.presentation.rv.itemdecorator
+package com.nastyaanastasya.cocktailbar.presentation.fragment.main.rv.itemdecorator
 
 import android.content.Context
 import android.graphics.Rect

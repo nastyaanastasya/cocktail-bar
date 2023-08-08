@@ -1,4 +1,4 @@
-package com.nastyaanastasya.cocktailbar.presentation.fragment
+package com.nastyaanastasya.cocktailbar.presentation.fragment.main
 
 import android.os.Bundle
 import android.view.View
@@ -13,7 +13,8 @@ import com.nastyaanastasya.cocktailbar.presentation.extension.hideLoading
 import com.nastyaanastasya.cocktailbar.presentation.extension.openDetailedScreen
 import com.nastyaanastasya.cocktailbar.presentation.extension.openEditingScreen
 import com.nastyaanastasya.cocktailbar.presentation.extension.showLoading
-import com.nastyaanastasya.cocktailbar.presentation.rv.CocktailAdapter
+import com.nastyaanastasya.cocktailbar.presentation.fragment.main.rv.itemdecorator.SpaceItemDecorator
+import com.nastyaanastasya.cocktailbar.presentation.fragment.main.rv.CocktailAdapter
 import com.nastyaanastasya.cocktailbar.presentation.viewmodel.ListViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
@@ -22,19 +23,20 @@ import kotlinx.coroutines.launch
 class CocktailsFragment : Fragment(R.layout.fragment_cocktails) {
 
     private lateinit var binding: FragmentCocktailsBinding
-    private lateinit var adapter: CocktailAdapter
+    private lateinit var cocktailAdapter: CocktailAdapter
 
     private val viewModel: ListViewModel by viewModels()
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentCocktailsBinding.bind(view)
-        adapter = CocktailAdapter { openDetailedScreen(it) }
+        cocktailAdapter = CocktailAdapter { openDetailedScreen(it) }
 
         showLoading()
 
         initObservers()
         initListeners()
+        initRecycler()
     }
 
     private fun initObservers() {
@@ -62,8 +64,17 @@ class CocktailsFragment : Fragment(R.layout.fragment_cocktails) {
         hideLoading()
     }
 
+    private fun initRecycler() {
+        binding.rvCocktails.apply{
+            adapter = cocktailAdapter
+            addItemDecoration(
+                SpaceItemDecorator(requireContext())
+            )
+        }
+    }
+
     private fun setAdapter(list: List<CocktailSimpleDto>) {
-        adapter.submitList(list.toMutableList())
+        cocktailAdapter.submitList(list.toMutableList())
     }
 
     private fun showList(isVisible: Boolean) {
