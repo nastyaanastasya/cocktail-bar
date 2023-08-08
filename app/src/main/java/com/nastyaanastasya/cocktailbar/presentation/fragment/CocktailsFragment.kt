@@ -47,7 +47,7 @@ class CocktailsFragment : Fragment(R.layout.fragment_cocktails) {
 
     private fun initListeners() {
         binding.fabAdd.setOnClickListener {
-            openEditingScreen(-1)
+            openEditingScreen(null)
         }
     }
 

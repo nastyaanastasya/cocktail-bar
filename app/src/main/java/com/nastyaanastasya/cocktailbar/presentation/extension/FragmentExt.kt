@@ -9,11 +9,11 @@ import com.nastyaanastasya.cocktailbar.R
 import com.nastyaanastasya.cocktailbar.presentation.MainActivity
 import com.nastyaanastasya.cocktailbar.presentation.extension.constants.Constants.COCKTAIL_ID
 
-fun Fragment.showLoading(){
+fun Fragment.showLoading() {
     (activity as MainActivity).findViewById<ProgressBar>(R.id.progressBar).visibility = View.VISIBLE
 }
 
-fun Fragment.hideLoading(){
+fun Fragment.hideLoading() {
     (activity as MainActivity).findViewById<ProgressBar>(R.id.progressBar).visibility = View.GONE
 }
 
@@ -28,4 +28,8 @@ fun Fragment.openDetailedScreen(id: Int) {
         R.id.action_cocktailsFragment_to_detailsFragment,
         bundleOf(COCKTAIL_ID to id)
     )
+}
+
+fun Fragment.navigateBack() {
+    findNavController().navigateUp()
 }

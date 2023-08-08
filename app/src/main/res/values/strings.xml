@@ -9,6 +9,14 @@
     <string name="btn_save_text">Save</string>
     <string name="btn_delete_text">Delete</string>
 
+    <string name="empty_title_error">Add title</string>
+
+    <string name="hint_title">Title</string>
+    <string name="hint_desc">Description</string>
+    <string name="hint_recipe">Recipe</string>
+
+    <string name="helper_optional">Optional field</string>
+
     <string name="title_text">Title</string>
     <string name="desc_text">Description</string>
     <string name="recipe_text">Recipe</string>
