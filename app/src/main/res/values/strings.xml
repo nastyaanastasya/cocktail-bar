@@ -1,3 +1,20 @@
 <resources>
-    <string name="app_name">CocktailBar</string>
+    <string name="app_name">Cocktail Bar</string>
+
+    <string name="my_cocktails_text">My cocktails</string>
+    <string name="add_first_cocktail_text">Add your first cocktail here</string>
+
+    <string name="btn_edit_text">Edit</string>
+    <string name="btn_cancel_text">Cancel</string>
+    <string name="btn_save_text">Save</string>
+    <string name="btn_delete_text">Delete</string>
+
+    <string name="title_text">Title</string>
+    <string name="desc_text">Description</string>
+    <string name="recipe_text">Recipe</string>
+    <string name="ingredients_text">Ingredients</string>
+
+    <string name="cocktail_example">Cocktail Name Example</string>
+
+    <string name="title_error_text">Add title</string>
 </resources>
